@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 17, 2016 1:26:08 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="crud.entity.Employees" table="employees" catalog="crud" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="firstName" type="string">
+            <column name="firstName" />
+        </property>
+        <property name="lastName" type="string">
+            <column name="lastName" />
+        </property>
+        <property name="fatherName" type="string">
+            <column name="fatherName" />
+        </property>
+        <property name="motherName" type="string">
+            <column name="motherName" />
+        </property>
+        <property name="gender" type="string">
+            <column name="gender" />
+        </property>
+        <property name="qualification" type="string">
+            <column name="qualification" />
+        </property>
+        <property name="institute" type="string">
+            <column name="institute" />
+        </property>
+        <property name="address" type="string">
+            <column name="address" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" />
+        </property>
+        <property name="contact" type="string">
+            <column name="contact" />
+        </property>
+    </class>
+</hibernate-mapping>
